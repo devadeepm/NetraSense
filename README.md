@@ -7,8 +7,7 @@
 *An end-to-end, low-cost diabetic retinopathy (DR) screening pipeline, from a 3D-printed phone adapter to clinician-in-the-loop AI.*
 
 [Video Demo](https://drive.google.com/file/d/14a7HKVSnaQPbePSgQ4wUk6hhX6Ago4Qr/view?usp=sharing) •
-[Demo Images](https://drive.google.com/drive/folders/1maapR4iSoNl-SaP4cdFXWEq9AVurF7XF?usp=sharing) •
-[Slides](https://drive.google.com/file/d/1LKeeMtHG5_bl3H-GGnNfFqNwllP864lx/view?usp=sharing)
+[Demo Images](https://drive.google.com/drive/folders/1maapR4iSoNl-SaP4cdFXWEq9AVurF7XF?usp=sharing)
 
 </div>
 
@@ -21,7 +20,6 @@
 - [Repository Structure](#-repository-structure)
 - [Quick Start](#-quick-start)
 - [Demo & Presentation](#-demo--presentation)
-- [Team](#-team)
 
 ---
 
@@ -45,8 +43,8 @@ Traditional screening tools tend to fail in one of three ways:
 
 | # | Module | Description |
 |---|---|---|
-| 1 | **Low-Cost Hardware** | 3D-printed, smartphone-compatible fundus camera adapter (`fundus_camera_complete_assembly.stl`) |
-| 2 | **Pre-Diagnostic Quality Gate** | MATLAB optical feature extraction (`quality_filter.m`) validates clarity *before* grading |
+| 1 | **Low-Cost Hardware** | 3D-printed, smartphone-compatible fundus camera adapter|
+| 2 | **Pre-Diagnostic Quality Gate** | MATLAB optical feature extraction validates clarity *before* grading |
 | 3 | **Multi-Task Lesion Detection** | MATLAB enhancement and lesion localization for hemorrhages and microaneurysms |
 | 4 | **Adaptive ML + RLHF** | PyTorch multi-task DR grading with **KL-anchored clinician RLHF** |
 
@@ -78,10 +76,10 @@ Designed and modeled a portable, 3D-printed smartphone fundus camera attachment 
 
 | Script | Purpose |
 |---|---|
-| `quality_filter.m` | Evaluates **illumination, blur, and contrast** to accept or reject scans |
-| `image_enhancement.m.txt` | Enhances retinal vascular visibility |
-| `hemorrhage_detection.m.txt` | Rule-based and morphological extraction of hemorrhage regions |
-| `microaneurysm_detection.m.txt` | Morphological detection of microaneurysms |
+| Quality Filter| Evaluates **illumination, blur, and contrast** to accept or reject scans |
+| Image Enhancement | Enhances retinal vascular visibility |
+| Hemorrhage Detection | Rule-based and morphological extraction of hemorrhage regions |
+| Microaneurysms Detection | Morphological detection of microaneurysms |
 
 ### Machine Learning & RLHF (`.ipynb`)
 - PyTorch training pipelines for **multi-task DR grading**
@@ -94,53 +92,17 @@ Designed and modeled a portable, 3D-printed smartphone fundus camera attachment 
 ```text
 ├── NetraSense_Presentation.pdf
 ├── README.md                            # Project documentation
-├── fundus_camera_complete_assembly.stl  # 3D-printable smartphone adapter (CAD)
-├── quality_filter.m                     # Image acceptance/rejection quality gate
-├── image_enhancement.m.txt              # Preprocessing and contrast enhancement
-├── hemorrhage_detection.m.txt           # Hemorrhage lesion extraction
-├── microaneurysm_detection.m.txt        # Microaneurysm detection
-└── netrasense-ml-rlhf.ipynb    # ML training, inference, and RLHF notebook
 ```
 
-> **Note:** The lesion/enhancement scripts use the `.m.txt` extension. Rename them to `.m` before running them in MATLAB.
-
 ---
-
-## Quick Start
-
-### 1. Hardware Assembly
-1. Open `fundus_camera_complete_assembly.stl` in any slicer (**PrusaSlicer**, **Cura**).
-2. Print with **PLA** filament.
-3. Assemble with standard optical lenses and align with your smartphone camera.
-
-### 2. MATLAB Quality & Feature Extraction
-1. Open MATLAB and run `quality_filter.m` on your raw fundus images (or the [sample images](https://drive.google.com/drive/folders/1maapR4iSoNl-SaP4cdFXWEq9AVurF7XF?usp=sharing)) to verify usability.
-2. Use `image_enhancement.m`, `hemorrhage_detection.m`, and `microaneurysm_detection.m` for preprocessing and lesion extraction.
-
-### 3. ML & RLHF Notebook
-Launch Jupyter or Colab:
-
-```bash
-jupyter notebook netrasense-ml-rlhf.ipynb
-```
-
-Run the cells to load models, perform inference, test quality gates, and execute the RLHF weight-adaptation loop.
-
----
-
 ## Demo & Presentation
 
 | Resource | Link |
 |---|---|
 | Video Demo Walkthrough | [Google Drive](https://drive.google.com/file/d/14a7HKVSnaQPbePSgQ4wUk6hhX6Ago4Qr/view?usp=sharing) |
 | Sample Fundus & Result Images | [Google Drive Folder](https://drive.google.com/drive/folders/1maapR4iSoNl-SaP4cdFXWEq9AVurF7XF?usp=sharing) |
-| Slide Presentation | [NetraSense_Presentation.pdf](https://drive.google.com/file/d/1LKeeMtHG5_bl3H-GGnNfFqNwllP864lx/view?usp=sharing) |
 
 ---
-
-## Team
-
-Developed by **Team OptiQ**.
 
 <div align="center">
 
