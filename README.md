@@ -18,7 +18,6 @@
 - [Key Features](#-key-features)
 - [Pipeline Architecture](#-pipeline-architecture)
 - [Repository Structure](#-repository-structure)
-- [Quick Start](#-quick-start)
 - [Demo & Presentation](#-demo--presentation)
 
 ---
