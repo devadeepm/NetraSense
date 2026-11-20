@@ -18,7 +18,6 @@
 - [Overview](#-overview)
 - [Key Features](#-key-features)
 - [Pipeline Architecture](#-pipeline-architecture)
-- [What We Built](#-what-we-built-during-build-2026)
 - [Repository Structure](#-repository-structure)
 - [Quick Start](#-quick-start)
 - [Demo & Presentation](#-demo--presentation)
@@ -72,8 +71,6 @@ flowchart LR
 
 ---
 
-## What We Built During BUILD 2026
-
 ### Hardware Prototyping (`.stl`)
 Designed and modeled a portable, 3D-printed smartphone fundus camera attachment to cut equipment barriers.
 
@@ -95,7 +92,7 @@ Designed and modeled a portable, 3D-printed smartphone fundus camera attachment 
 ## Repository Structure
 
 ```text
-├── NetraSense_Presentation.pdf          # Official BUILD 2026 slide deck
+├── NetraSense_Presentation.pdf
 ├── README.md                            # Project documentation
 ├── fundus_camera_complete_assembly.stl  # 3D-printable smartphone adapter (CAD)
 ├── quality_filter.m                     # Image acceptance/rejection quality gate
