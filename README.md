@@ -80,7 +80,7 @@ Designed and modeled a portable, 3D-printed smartphone fundus camera attachment 
 | Hemorrhage Detection | Rule-based and morphological extraction of hemorrhage regions |
 | Microaneurysms Detection | Morphological detection of microaneurysms |
 
-### Machine Learning & RLHF (`.ipynb`)
+### Machine Learning & RLHF
 - PyTorch training pipelines for **multi-task DR grading**
 - **KL-divergence anchored RLHF** that updates model weights from clinician corrections while **avoiding catastrophic forgetting**
 
@@ -89,7 +89,7 @@ Designed and modeled a portable, 3D-printed smartphone fundus camera attachment 
 ## Repository Structure
 
 ```text
-├── NetraSense_Presentation.pdf
+├── NetraSense_Video.mp4
 ├── README.md                            # Project documentation
 ```
 
