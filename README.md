@@ -68,10 +68,10 @@ flowchart LR
 
 ---
 
-### Hardware Prototyping (`.stl`)
+### Hardware Prototyping
 Designed and modeled a portable, 3D-printed smartphone fundus camera attachment to cut equipment barriers.
 
-### MATLAB Optical Pipeline (`.m` / `.txt`)
+### MATLAB Optical Pipeline
 
 | Script | Purpose |
 |---|---|
