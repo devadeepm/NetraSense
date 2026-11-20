@@ -102,7 +102,7 @@ Designed and modeled a portable, 3D-printed smartphone fundus camera attachment 
 ├── image_enhancement.m.txt              # Preprocessing and contrast enhancement
 ├── hemorrhage_detection.m.txt           # Hemorrhage lesion extraction
 ├── microaneurysm_detection.m.txt        # Microaneurysm detection
-└── netrasense-hackyard-ml-rlhf.ipynb    # ML training, inference, and RLHF notebook
+└── netrasense-ml-rlhf.ipynb    # ML training, inference, and RLHF notebook
 ```
 
 > **Note:** The lesion/enhancement scripts use the `.m.txt` extension. Rename them to `.m` before running them in MATLAB.
@@ -124,7 +124,7 @@ Designed and modeled a portable, 3D-printed smartphone fundus camera attachment 
 Launch Jupyter or Colab:
 
 ```bash
-jupyter notebook netrasense-hackyard-ml-rlhf.ipynb
+jupyter notebook netrasense-ml-rlhf.ipynb
 ```
 
 Run the cells to load models, perform inference, test quality gates, and execute the RLHF weight-adaptation loop.
@@ -143,7 +143,7 @@ Run the cells to load models, perform inference, test quality gates, and execute
 
 ## Team
 
-Developed for **Hackyard BUILD 2026** by **Team OptiQ**.
+Developed by **Team OptiQ**.
 
 <div align="center">
 
