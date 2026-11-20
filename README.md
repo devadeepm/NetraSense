@@ -54,7 +54,7 @@ Traditional screening tools tend to fail in one of three ways:
 ```mermaid
 flowchart LR
     A[Smartphone + 3D-Printed Adapter] --> B[Raw Fundus Image]
-    B --> C{Quality Gate<br/>quality_filter.m}
+    B --> C{Quality Gate<br/>}
     C -- Rejected --> D[Recapture]
     D --> B
     C -- Accepted --> E[Image Enhancement]
